@@ -8,6 +8,7 @@ POST_DEFCONFIG_CMDS="rm ${ROOT_DIR}/${KERNEL_DIR}/arch/arm64/configs/${DEFCONFIG
 
 FILES="
 arch/arm64/boot/Image.gz
+arch/arm64/boot/dts/mediatek/mt6768.dtb
 "
 
 # Strip kernel modules
