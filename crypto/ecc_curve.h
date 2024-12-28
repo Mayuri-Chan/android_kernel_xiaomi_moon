@@ -53,7 +53,9 @@ static struct ecc_curve nist_p256 = {
 	.a = nist_p256_a,
 	.b = nist_p256_b
 };
-/* N19A code for HQ-360184 by p-wumingzhu1 at 20240103 start */
+
+
+/* NIST P-384 */
 static u64 nist_p384_g_x[] = { 0x3A545E3872760AB7ull, 0x5502F25DBF55296Cull,
 				0x59F741E082542A38ull, 0x6E1D3B628BA79B98ull,
 				0x8Eb1C71EF320AD74ull, 0xAA87CA22BE8B0537ull };
@@ -84,6 +86,7 @@ static struct ecc_curve nist_p384 = {
 	.a = nist_p384_a,
 	.b = nist_p384_b
 };
+
 /* curve25519 */
 static u64 curve25519_g_x[] = { 0x0000000000000009, 0x0000000000000000,
 				0x0000000000000000, 0x0000000000000000 };
@@ -100,5 +103,5 @@ static const struct ecc_curve ecc_25519 = {
 	.p = curve25519_p,
 	.a = curve25519_a,
 };
-/* N19A code for HQ-360184 by p-wumingzhu1 at 20240103 end */
+
 #endif
